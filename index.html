@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSI-modellen Lag 1 til 7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    🌐 OSI-modellen Lag 1 til 7
+  </header>
+
+  <main>
+    <div class="card" onclick="showInfo(1)">
+      <h2>Lag 1 Fysiske laget</h2>
+      <p>Sender rå bits via fysiske medier som kabler og signaler.</p>
+    </div>
+
+    <div class="card" onclick="showInfo(2)">
+      <h2>Lag 2 Datalink-laget</h2>
+      <p>Feildeteksjon, rammer og MAC-adresser. Kobler enheter på samme nettverk.</p>
+    </div>
+
+    <div class="card" onclick="showInfo(3)">
+      <h2>Lag 3 Nettverkslaget</h2>
+      <p>Ruting og adressering av pakker mellom nettverk. Bruker IP-adresser.</p>
+    </div>
+
+    <div class="card" onclick="showInfo(4)">
+      <h2>Lag 4 Transportlaget</h2>
+      <p>Pålitelig dataoverføring og segmentering. Bruker TCP/UDP.</p>
+    </div>
+
+    <div class="card" onclick="showInfo(5)">
+      <h2>Lag 5 Sesjonslaget</h2>
+      <p>Oppretter, styrer og avslutter kommunikasjonssesjoner mellom applikasjoner.</p>
+    </div>
+
+    <div class="card" onclick="showInfo(6)">
+      <h2>Lag 6 Presentasjonslaget</h2>
+      <p>Håndterer datatransformasjon, kryptering og komprimering.</p>
+    </div>
+
+    <div class="card" onclick="showInfo(7)">
+      <h2>Lag 7 Applikasjonslaget</h2>
+      <p>Grensesnittet for sluttbrukerapplikasjoner, som nettlesere og e-post.</p>
+    </div>
+  </main>
+
+  <div id="infoBox"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
